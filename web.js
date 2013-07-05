@@ -9,7 +9,7 @@ var len = buf.write(fn,0);
 
 app.get('/', function(request, response) {
   response.send('Hello world 2!');
-  response.send(buf.toString('utf8',0,len)); 
+  //response.send(buf.toString('utf8',0,len)); 
 });
 
 var port = process.env.PORT || 5000;
