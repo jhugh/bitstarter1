@@ -10,9 +10,9 @@ var len = buf.write(fn,0,'utf8');
 
 
 app.get('/', function(request, response) {
-  response.send('Hello world 2!');
+  //response.send('Hello world 2!');
   //response.send(fn);
-  //response.send(buf.toString('utf8',0,len)); 
+  response.send(buf.toString('utf8',0,len)); 
 
 });
 
