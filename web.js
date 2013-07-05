@@ -5,14 +5,14 @@ var app = express.createServer(express.logger());
 
 var buf = new Buffer(255);
 var fn  = fs.readFileSync('index.html','utf8');
-var len = buf.write(fn,0,,'utf8');
+//var len = buf.write(fn,0,,'utf8');
 
 
 
 app.get('/', function(request, response) {
-  //response.send('Hello world 2!');
+  response.send('Hello world 2!');
   //response.send(fn);
-  response.send(buf.toString('utf8',0,len)); 
+  //response.send(buf.toString('utf8',0,len)); 
 
 });
 
