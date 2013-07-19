@@ -7,7 +7,7 @@ var buf = new Buffer(15000);
 var fn  = fs.readFileSync('index.html','utf8');
 var len = buf.write(fn,0,'utf8');
 
-
+app.use(express.static(__dirname + "/"));
 
 app.get('/', function(request, response) {
   //response.send('Hello world 2!');
